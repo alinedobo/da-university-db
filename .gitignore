@@ -1,0 +1,20 @@
+#mac OS
+.DS_Store
+
+#Environements variables/secrets
+.env
+
+# Virtual Environement
+.venv/
+
+#Python
+__pycache__
+#*.py
+
+#Django
+db.sqlite3
+media/
+static/
+
+
+Bildschirmfoto_2026-11-06_um_11.50.28.png
