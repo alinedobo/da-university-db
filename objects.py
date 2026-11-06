@@ -2,15 +2,17 @@ from datetime import date
 
 from university.models import Semester, Professor, Course, CourseDescription, Student, StudentID
 
-semester1 = Semester.objects.create(start=date(2027, 1, 1), end=date(2027, 6, 30), course=["course1", "course2", "course3"])
-
-professor1 = Professor.objects.create(first_name="John", last_name="Doe", email_address="john.doe@example.com", course="course1") 
-professor2 = Professor.objects.create(first_name="Jane", last_name="Smith", email_address="jane.smith@example.com", course="course1") 
-professor3 = Professor.objects.create(first_name="Alice", last_name="Johnson", email_address="alice.johnson@example.com", course="course3") 
+semester1 = Semester.objects.create(start=date(2027, 1, 1), end=date(2027, 6, 30))
 
 course1 = Course.objects.create(name="Course A", number_of_modules=5.0) 
 course2 = Course.objects.create(name="Course B", number_of_modules=3.0) 
 course3 = Course.objects.create(name="Course C", number_of_modules=10.0) 
+
+professor1 = Professor.objects.create(first_name="John", last_name="Doe", email_address="john.doe@example.com") 
+professor2 = Professor.objects.create(first_name="Jane", last_name="Smith", email_address="jane.smith@example.com") 
+professor3 = Professor.objects.create(first_name="Alice", last_name="Johnson", email_address="alice.johnson@example.com") 
+
+
 
 description1 = CourseDescription.objects.create(description="bla", course=course1)
 description2 = CourseDescription.objects.create(description="blabla", course=course2)
