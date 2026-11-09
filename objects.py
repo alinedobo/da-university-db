@@ -3,6 +3,7 @@ from datetime import date
 from university.models import Semester, Professor, Course, CourseDescription, Student, StudentID
 
 semester1 = Semester.objects.create(start=date(2027, 1, 1), end=date(2027, 6, 30))
+semester2 = Semester.objects.create(start=date(2027, 2, 2), end=date(2027, 7, 31))
 
 course1 = Course.objects.create(name="Course A", number_of_modules=5.0) 
 course2 = Course.objects.create(name="Course B", number_of_modules=3.0) 
